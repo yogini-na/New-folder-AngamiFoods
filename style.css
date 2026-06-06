@@ -1421,3 +1421,30 @@ img{
 .active-page{
     display:block;
 }
+@media (max-width: 768px) {
+
+    .navbar{
+        padding:15px 0;
+    }
+
+    .nav-container{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:1.8rem;
+        text-align:center;
+    }
+
+    .nav-links{
+        display:none; /* mobile me links hide */
+    }
+
+    .navbar .btn{
+        padding:12px 30px;
+        font-size:0.9rem;
+    }
+
+}
