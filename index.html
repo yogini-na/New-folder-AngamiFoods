@@ -660,26 +660,28 @@
                 <div class="form-row">
 
                     <div>
-                        <label>Name</label>
-                        <input type="text" placeholder="John Doe">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="John Doe" required>
                     </div>
 
                     <div>
-                        <label>Email</label>
-                        <input type="email" placeholder="john@company.com">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="john@company.com" required>
                     </div>
 
                 </div>
 
-                <label>Company</label>
-                <input type="text" placeholder="Your Organization">
+                <label for="company">Company</label>
+                <input id="company" type="text" placeholder="Your Organization">
 
-                <label>Message</label>
-                <textarea rows="6" placeholder="How can we help you?"></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" placeholder="How can we help you?" required></textarea>
 
-                <button type="submit" class="submit-btn">
+                <button type="submit" class="submit-btn" id="submitBtn">
                     SUBMIT INQUIRY
                 </button>
+
+                <div id="formStatus" style="display:none; margin-top:12px; padding:12px; border-radius:8px; font-size:14px;"></div>
 
                 <div class="divider"></div>
 
@@ -796,10 +798,7 @@
 </footer>
 
     <script src="script.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-    <script src="js/supabase.js"></script>
+    <script src="db.js"></script>
 </body>
 
 </html>

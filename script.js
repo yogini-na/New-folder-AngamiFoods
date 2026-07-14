@@ -187,37 +187,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 /* ===================================
    CONTACT FORM
+   (Handled by db.js — local SQLite API)
 =================================== */
-
-const contactForm = document.getElementById("contactForm");
-
-if (contactForm) {
-
-    contactForm.addEventListener("submit", function (e) {
-
-        e.preventDefault();
-
-        const button = this.querySelector("button");
-
-        const originalText = button.innerText;
-
-        button.innerText = "Sending...";
-
-        setTimeout(() => {
-
-            alert(
-                "Thank you for contacting Angami Foods!"
-            );
-
-            this.reset();
-
-            button.innerText = originalText;
-
-        }, 1000);
-
-    });
-
-}
 
 /* ===================================
    PRODUCT CARD HOVER EFFECT
